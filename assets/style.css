@@ -1,0 +1,14 @@
+
+/* Fundo azul claro */
+.hero {
+  background: linear-gradient(180deg, #3a6ccf 0%, #2d5bb5 100%);
+  color: white;
+}
+.hero h1 {
+  font-size: clamp(28px, 4.5vw, 50px); /* título menor */
+  font-weight: 900;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+.badge img {
+  filter: brightness(0) invert(1); /* Logo branco */
+}
