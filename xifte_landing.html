@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XIFTE – Apresentação</title>
+<style>
+    /* Reset and basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #222;
+        line-height: 1.6;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    h1, h2, h3 {
+        margin: 0 0 10px;
+        line-height: 1.2;
+    }
+    p {
+        margin: 0 0 15px;
+    }
+
+    /* Hero section */
+    .hero {
+        background-color: #111;
+        color: #f5f5f5;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 48px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .hero-subtitle {
+        font-size: 20px;
+        margin-bottom: 40px;
+        font-style: italic;
+    }
+    .hero-quote {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    /* Central product area */
+    .product-area {
+        position: relative;
+        margin: 40px auto;
+        width: 420px;
+        height: 420px;
+    }
+    .product-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+        transform: translate(-50%, -50%);
+        border: 4px solid #ccc;
+        background-color: #eee;
+    }
+    .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Feature links around the product */
+    .feature-link {
+        position: absolute;
+        width: 150px;
+        padding: 8px 10px;
+        background: rgba(0,0,0,0.75);
+        color: #fff;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: bold;
+        transition: background 0.3s;
+        cursor: pointer;
+    }
+    .feature-link:hover {
+        background: rgba(0,0,0,0.95);
+    }
+    .feature-link .arrow {
+        display: block;
+        font-size: 20px;
+        margin-top: 4px;
+    }
+    /* Positions for the feature links */
+    .link-top {
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .link-right {
+        top: 50%;
+        right: -25px;
+        transform: translateY(-50%);
+    }
+    .link-bottom {
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .link-left {
+        top: 50%;
+        left: -25px;
+        transform: translateY(-50%);
+    }
+    /* Sections styling */
+    section {
+        padding: 60px 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    section:nth-of-type(odd) {
+        background-color: #fafafa;
+    }
+    section:nth-of-type(even) {
+        background-color: #fff;
+    }
+    .section-title {
+        font-size: 32px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .section-content {
+        font-size: 18px;
+    }
+    .stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .stat {
+        flex: 1 1 200px;
+        background: #f0f0f0;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    .stat-value {
+        font-size: 36px;
+        font-weight: bold;
+        color: #222;
+    }
+    .stat-label {
+        font-size: 16px;
+        color: #555;
+    }
+    footer {
+        text-align: center;
+        padding: 40px 20px;
+        background: #111;
+        color: #f5f5f5;
+    }
+</style>
+</head>
+<body>
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-title">XIFTE</div>
+        <div class="hero-subtitle">CEO – Diogo Ribeiro</div>
+        <p class="hero-quote">“Construímos a XIFTE para tornar o treino de força mais inteligente — mais seguro, mais adaptativo e pronto para todos.”</p>
+    </header>
+
+    <!-- Central product with feature links -->
+    <div class="product-area">
+        <div class="product-image">
+            <!-- Substituir o src abaixo pela imagem real da máquina -->
+            <img src="" alt="Imagem do produto XIFTE" />
+        </div>
+        <a href="#espaco" class="feature-link link-top">
+            Otimização de espaço
+            <span class="arrow">▼</span>
+        </a>
+        <a href="#adaptar" class="feature-link link-right">
+            Desenvolvida para se adaptar
+            <span class="arrow">◀</span>
+        </a>
+        <a href="#seguranca" class="feature-link link-bottom">
+            Eficácia e segurança
+            <span class="arrow">▲</span>
+        </a>
+        <a href="#inteligente" class="feature-link link-left">
+            Treinar de forma inteligente
+            <span class="arrow">▶</span>
+        </a>
+    </div>
+
+    <!-- Sections with detailed information -->
+    <section id="espaco">
+        <h2 class="section-title">Otimização de Espaço</h2>
+        <div class="section-content">
+            <p>Uma máquina substitui dezenas de equipamentos tradicionais, reduzindo drasticamente o espaço necessário para um treino completo.</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">Máquina</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">80%</div>
+                    <div class="stat-label">Menos espaço</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Funcionalidade</div>
+                </div>
+            </div>
+            <p>Redução significativa do espaço necessário para um treino completo, sem comprometer a versatilidade. O XIFTE permite treinos totalmente adaptados às capacidades e necessidades físicas do utilizador.</p>
+        </div>
+    </section>
+
+    <section id="adaptar">
+        <h2 class="section-title">Desenvolvida para se Adaptar</h2>
+        <div class="section-content">
+            <p>Cada detalhe ajusta‑se ao utilizador: ângulos, cargas e amplitudes de movimento. A combinação de mecânica linear e angular permite realizar todos os exercícios num único sistema.</p>
+            <p>Garante maior controlo do perfil de resistência durante todo o movimento, adaptado às necessidades do utilizador.</p>
+        </div>
+    </section>
+
+    <section id="seguranca">
+        <h2 class="section-title">Eficácia e Segurança</h2>
+        <div class="section-content">
+            <p><strong>Otimização biomecânica:</strong> alinha a resistência com os eixos naturais das articulações para um treino seguro.</p>
+            <p><strong>Acessibilidade universal:</strong> concebida para todos os tipos de corpo e níveis de condição física.</p>
+            <p><strong>Prevenção de lesões:</strong> elimina padrões de carga perigosos através de mecânicas inteligentes.</p>
+        </div>
+    </section>
+
+    <section id="inteligente">
+        <h2 class="section-title">Porquê Treinar de Forma Mais Inteligente?</h2>
+        <div class="section-content">
+            <p><strong>Versatilidade personalizada:</strong> adapta‑se ao seu corpo único e objectivos específicos.</p>
+            <p><strong>Compacto e eficaz:</strong> treino de força eficaz num design compacto.</p>
+            <p><strong>Conforto e segurança:</strong> maior segurança e conforto, fruto da capacidade de ajustar a máquina ao corpo.</p>
+            <p>Uma nova era. O XIFTE é uma revolução no treino de força — seja parte do futuro.</p>
+        </div>
+    </section>
+
+    <!-- Contact footer -->
+    <footer>
+        <p><strong>Contactos:</strong> <a href="mailto:geral@mechanicals.pt">geral@mechanicals.pt</a> | <a href="tel:+351965332079">+351 965 332 079</a></p>
+        <p>Desenvolvido com base nas informações do site XIFTE.</p>
+    </footer>
+</body>
+</html>
